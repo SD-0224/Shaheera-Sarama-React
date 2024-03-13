@@ -1,0 +1,49 @@
+header {
+    box-shadow: 0 0 10px var(--lines-color);
+    background-color: var(--bg-default);
+}
+
+header nav {
+    padding: 15px 0;
+}
+
+header nav .logo a {
+    text-transform: capitalize;
+    color: var(--brand-primary);
+    font-weight: bold;
+}
+/* .buttonsNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.buttonsNav button{
+    border: 1px solid var(--lines-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.buttonsNav button ion-icon{
+    padding-right: 3px;
+}
+
+@media(max-width:767px) {
+    header nav .logo a {
+        font-size: 14px;
+    }
+
+    .buttonsNav button p{
+        display: none;
+    }
+
+    header ion-icon {
+        text-align: center;
+    }
+}

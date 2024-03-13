@@ -1,0 +1,72 @@
+.courseBox {
+    background-color: var(--bg-default);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 270px;
+    box-shadow: 0 0 10px var(--lines-color);
+}
+
+.courseBox:nth-child(4) img,.courseBox:nth-child(1) img{
+    background-color: white;
+}
+
+.courseBox img {
+    width: 100%;
+    height: 120px;
+    transition: 0.5s;
+    border-radius: 5px 5px 0 0;
+}
+
+.courseBox:hover img {
+    transform: scale(0.99);
+}
+
+.courseBoxText {
+    padding: 15px;
+    text-align: left;
+}
+
+.coursesHeadings {
+    height: 50px;
+}
+
+.oursesHeadings a{
+    cursor: pointer;
+}
+
+.courseBoxText h2 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--body-text);
+}
+
+.courseBoxText h3 {
+    margin-bottom: 15px;
+    color: var(--body-text);
+    font-size: 14px;
+    font-weight: 600;
+}
+.courseBoxText .stars {
+    margin: 10px 0 10px;
+}
+
+.courseBoxText .stars ion-icon {
+    color: #E29916;
+    font-size: 14px;
+    margin-right: 0px;
+}
+
+.courseBoxText p {
+    color: #929292;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.courseBox ion-icon{
+    color: #E29916;
+    margin-bottom: 5px;
+}

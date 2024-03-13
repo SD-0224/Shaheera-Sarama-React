@@ -1,0 +1,21 @@
+.coursesContent {
+    margin-top: 20px;
+}
+
+.courses {
+    margin: 20px 0;
+}
+
+.coursestext p {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--body-text);
+    text-align: left;
+}
+
+.coursesContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap: 15px;
+}
+

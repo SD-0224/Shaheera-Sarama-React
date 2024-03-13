@@ -1,0 +1,59 @@
+.shapes{
+    height: 55px;
+    background-color: var(--bg-default);
+}
+.shape 
+{
+width: 100vw;
+height: 22vh;
+clip-path: polygon(0 0, 100% 0, 100% 33%, 78% 15%, 60% 3%, 0 32%);
+background: linear-gradient(50deg,var(--brand-primary),var(--brand-secondary));
+}
+.welcome {
+    background-color: var(--bg-default);
+}
+
+.welcome .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome .text {
+    margin-top: -20px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.welcome h1 {
+    color: var(--brand-secondary);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.welcome p {
+    color: var(--body-text);
+    font-size: 16px;
+}
+@media(max-width:767px){
+    .shape{
+        height: 12vh;
+    }
+    .welcome h1 {
+        color: var(--brand-secondary);
+        font-size: 16px;
+    }
+
+    .welcome p {
+        color: var(--body-text);
+        font-size: 14px;
+    }
+}
+@media(min-width:768px) and (max-width:922px) {
+    .shape{
+        height: 15vh;
+    }
+    .welcome .text {
+        margin-top: -20px;
+    }
+}

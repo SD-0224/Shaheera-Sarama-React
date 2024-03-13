@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Header from './components/Header/Header.jsx'
+import Home from './pages/Home/Home.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import Shapes from './components/Shapes/Shapes.jsx';
+import { Route, Routes } from 'react-router-dom';
+import Details from './pages/Details/Details.jsx';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header/> */}
+      {/* <UiButton icon = 'heart' label = 'click'/> */}
+      <Header/>
+      <Shapes/>
+      <Routes>
+      <Route path='/' element = {<Home/>}></Route>
+      <Route path='/details' element = {<Details/>}></Route>
+      </Routes>
+      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+/* Start Footer */
+footer {
+    background-color: var(--bg-body);
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--body-text);
+}
+
+footer ion-icon {
+    color: var(--heart-color);
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: -5px;
+    font-weight: 700;
+}
+/* End footer */
