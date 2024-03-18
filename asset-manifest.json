@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Shaheera-Sarama-React/static/css/main.7e70a400.css",
+    "main.js": "/Shaheera-Sarama-React/static/js/main.1b4fcd49.js",
+    "static/js/453.0316c25a.chunk.js": "/Shaheera-Sarama-React/static/js/453.0316c25a.chunk.js",
+    "index.html": "/Shaheera-Sarama-React/index.html",
+    "main.7e70a400.css.map": "/Shaheera-Sarama-React/static/css/main.7e70a400.css.map",
+    "main.1b4fcd49.js.map": "/Shaheera-Sarama-React/static/js/main.1b4fcd49.js.map",
+    "453.0316c25a.chunk.js.map": "/Shaheera-Sarama-React/static/js/453.0316c25a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e70a400.css",
+    "static/js/main.1b4fcd49.js"
+  ]
+}
