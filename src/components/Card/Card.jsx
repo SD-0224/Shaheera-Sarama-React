@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import style from './Card.module.css';
+import Star from '../Stars/Star';
 export default function Card({topics}){
     return(
         <>
@@ -14,13 +15,7 @@ export default function Card({topics}){
                         <h2>{topics.category}</h2>
                         <h3>{topics.topic}</h3>
                       </div>
-                      <div className={style}>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
+                      <Star className={style.stars}/>
                       <p className="capitalize">author: {topics.name}</p>
                     </div>
                   </Link>

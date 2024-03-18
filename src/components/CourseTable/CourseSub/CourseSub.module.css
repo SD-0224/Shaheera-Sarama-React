@@ -1,0 +1,22 @@
+ul li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--lines-color);
+    padding: 12px 0;
+}
+ul li:nth-last-child(1){
+    border-bottom: none;
+}
+ul li ion-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: var(--brand-secondary);
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+ul li a{
+    font-size: 16px;
+    color: var(--body-text);
+    font-weight: 500;
+}

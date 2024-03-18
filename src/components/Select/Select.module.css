@@ -1,0 +1,72 @@
+main .select {
+    width: 11%;
+    background-color: var(--bg-default);
+    font-size: 10px;
+    border-left: 1px solid var(--lines-color);
+    height: 45px;
+    padding: 5px 20px 5px 10px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 5px;
+}
+main .select label{
+    color: var(--body-text);
+    display: block;
+    padding-bottom: 2px;
+    width: fit-content;
+    font-size: 10px;
+} 
+main .selcetBottom select{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--body-text);
+    margin-left: -3px;
+    font-family: 'Nunito Sans', sans-serif;
+    outline: none;
+    text-transform: capitalize;
+}
+select option{
+    color: var(--body-text);
+    background-color: var(--bg-default);
+}
+
+@media(max-width:767px) {
+    main .select {
+        width: 50%;
+        margin-right: 0px;
+        margin-top: -1px;
+        border-top: 1px solid var(--lines-color);
+    }
+
+    main .select.sort {
+        border-radius: 0px 0px 0px 5px;
+        margin-left: 0px;
+        border-left: none;
+    }
+    main .select.filter {
+        border-radius: 0px 0px 5px 0px;
+        margin-left: 0px;
+        border-left: 1px solid var(--lines-color);
+    }
+}
+
+@media(min-width:768px) and (max-width:922px) {
+    main .select {
+        width: 50%;
+        margin-right: 0px;
+        margin-top: -1px;
+        border-top: 1px solid var(--lines-color);
+    }
+    main .select.sort {
+        border-radius: 0px 0px 0px 5px;
+        margin-left: -1px;
+        border-left: none;
+    }
+    main .select.filter {
+        border-radius: 0px 0px 5px 0px;
+        margin-left: 0px;
+        border-left: 1px solid var(--lines-color);
+    }
+}

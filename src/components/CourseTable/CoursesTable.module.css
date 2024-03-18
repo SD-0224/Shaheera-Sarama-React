@@ -1,0 +1,51 @@
+.courseContent{
+    border: 1px solid var(--lines-color);
+    margin: 30px 0;
+    border-radius: 5px;
+    background-color: var(--bg-default);
+    width: 60%;
+}
+.courseContent h4{
+    font-weight: bold;
+    border-bottom: 1px solid var(--lines-color);
+    padding: 10px 0px 10px 15px;
+    color: var(--body-text);
+    text-align: left;
+    font-size: 1.3rem;
+}
+.courseContent h4 span{
+    text-transform: uppercase;
+}
+.courseContent ul li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--lines-color);
+    padding: 12px 0;
+}
+.courseContent ul li:nth-last-child(1){
+    border-bottom: none;
+}
+.courseContent ul li ion-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: var(--brand-secondary);
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.courseContent ul li a{
+    font-size: 16px;
+    color: var(--body-text);
+    font-weight: 500;
+}
+@media (max-width:767px){
+    .courseContent{
+        width: 100%;
+        /* margin: 30px auto; */
+    }
+}
+@media(min-width:768px) and (max-width:922px){
+    .courseContent{
+        width: 100%;
+    }
+}

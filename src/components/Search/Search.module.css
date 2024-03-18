@@ -31,41 +31,6 @@ main .search ion-icon {
     line-height: 45px;
     color: var(--body-text);
 }
-
-main .select {
-    width: 11%;
-    background-color: var(--bg-default);
-    font-size: 10px;
-    border-left: 1px solid var(--lines-color);
-    height: 45px;
-    padding: 5px 20px 5px 10px;
-    text-transform: capitalize;
-    position: relative;
-    padding-bottom: 5px;
-}
-main .select label{
-    color: var(--body-text);
-    display: block;
-    padding-bottom: 2px;
-    width: fit-content;
-} 
-main .selcetBottom select{
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    color: var(--body-text);
-    margin-left: -3px;
-    font-family: 'Nunito Sans', sans-serif;
-}
-select{
-    outline: none;
-}
-select option{
-    color: var(--body-text);
-    background-color: var(--bg-default);
-}
-
 @media(max-width:767px) {
     main .search {
         position: relative;
@@ -82,24 +47,6 @@ select option{
     main .search ion-icon {
         top: 16px;
     }
-
-    main .select {
-        width: 50%;
-        margin-right: 0px;
-        margin-top: -1px;
-        border-top: 1px solid var(--lines-color);
-    }
-
-    main .select.sort {
-        border-radius: 0px 0px 0px 5px;
-        margin-left: 0px;
-        border-left: none;
-    }
-    main .select.filter {
-        border-radius: 0px 0px 5px 0px;
-        margin-left: 0px;
-        border-left: 1px solid var(--lines-color);
-    }
 }
 
 @media(min-width:768px) and (max-width:922px) {
@@ -115,26 +62,5 @@ select option{
     }
     main .search ion-icon {
         top: 15px;
-    }
-    main .select {
-        width: 50%;
-        margin-right: 0px;
-        margin-top: -1px;
-        border-top: 1px solid var(--lines-color);
-    }
-    main .select.sort {
-        border-radius: 0px 0px 0px 5px;
-        margin-left: 0px;
-        border-left: none;
-    }
-    main .select.sort {
-        border-radius: 0px 0px 0px 5px;
-        margin-left: 0px;
-        border-left: none;
-    }
-    main .select.filter {
-        border-radius: 0px 0px 5px 0px;
-        margin-left: 0px;
-        border-left: 1px solid var(--lines-color);
     }
 }

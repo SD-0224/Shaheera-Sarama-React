@@ -1,8 +1,10 @@
-export default function UiButton({label,icon,style}){
+import styles from './UiButton.module.css';
+
+export default function UiButton({label,icon,className,...props}){
     return(
         <>
-        <button>
-        <ion-icon className={style} name={icon} />
+        <button {...props}>
+        <ion-icon className={className} name={icon} />
           <p>{label}</p>
         </button>
         </>

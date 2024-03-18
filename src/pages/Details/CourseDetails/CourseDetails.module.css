@@ -1,0 +1,206 @@
+body.detail{
+    background-color: var(--bg-body);
+}
+.welcome.detail{
+    background-color: var(--bg-default);
+    padding-bottom: 15px;
+}
+header{
+    background-color: var(--bg-default);
+}
+.container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.courseDatails{
+    background-color: #333;
+    padding-top: 15px;
+    position: relative;
+}
+
+.courseDetailsText{
+    width: 65%;
+    padding: 30px 0;
+    text-align: left;
+}
+
+.courseDetailsText h2{
+    color: var(--brand-secondary);
+    font-weight: 400;
+    font-size: 18px;
+}
+.courseDetailsText h3{
+    color: white;
+}
+.courseDetailsText .stars{
+    width: 15%;
+}
+.courseDetailsText ion-icon{
+    font-size: 13px;
+    margin-right: 0px;
+    color: #E29916;
+}
+.courseDetailsText p{
+    width: 100%;
+    color: white;
+}
+
+.courseDetailBox{
+    position: absolute;
+    width: 20%;
+    border: 1px solid white;
+    z-index: 1;
+    right: 22%;
+    top: 15%;
+    left: 50%;
+    transform: translate(60%,0%);
+}
+.courseDetailBox img{
+    width: 100%;
+    height: 150px;
+}
+.courseDetailBoxContent{
+    background-color: white;
+    margin-top: -6px;
+    padding: 10px 10px 15px 10px;
+}
+.courseDetailBoxContent p.author{
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+.courseDetailBoxContent p.author span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.courseDetailBoxContent p.author a{
+    text-decoration: underline;
+    color: var(--brand-primary);
+}
+.courseDetailBoxFav{
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+.courseDetailBoxFav a{
+    background-color: var(--brand-secondary);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+.courseDetailBoxFav a ion-icon{
+    font-size: 24px;
+}
+.courseDetailBoxFav p.cred{
+    color: #929292;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media(max-width:767px) {
+    .container{
+        width: 90%;
+    }
+    .courseDatails{
+        margin-top: 15px;
+        position: static;
+        padding-bottom: 20px;
+    }
+    .courseDatails .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .courseDetailsText{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .courseDetailsText h2{
+        color: var(--brand-secondary);
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .courseDetailsText h3{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .courseDetailsText .stars{
+        width: 100%;
+    }
+    .courseDetailsText ion-icon{
+        font-size: 12px;
+        margin-right: 0px;
+        color: #E29916;
+    }
+    .courseDetailsText p{
+        width: 100%;
+    }
+    .courseDetailBox{
+        position: static;
+        width: 100%;
+        border: 1px solid var(--lines-color);
+        z-index: 1;
+        right: 0%;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%,0%);
+        padding-bottom: 0px;
+    }
+    .courseDetailsText p{
+        width: 100%;
+        color: white;
+    }
+}
+
+@media(min-width:768px) and (max-width:922px) {
+    .courseDatails{
+        background-color: #333;
+        margin-top: 15px;
+        position: static;
+        padding-bottom: 20px;
+    }
+    
+    .courseDetailsText{
+        width: 60%;
+        padding: 30px 0;
+    }
+    .courseDetailsText h2{
+        color: var(--brand-secondary);
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .courseDetailsText h3{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .courseDetailsText .stars{
+        width: 100%;
+    }
+    .courseDetailsText ion-icon{
+        font-size: 12px;
+        margin-right: 0px;
+        color: #E29916;
+    }
+    .courseDetailsText p{
+        width: 100%;
+        color: white;
+    }
+    .courseDetailBox{
+        position: static;
+        width: 40%;
+        border: 1px solid var(--lines-color);
+       
+    }
+    .courseDetailsText p{
+        width: 100%;
+    }
+} 

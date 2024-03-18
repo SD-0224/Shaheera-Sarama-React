@@ -1,0 +1,16 @@
+button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--lines-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+button ion-icon{
+    padding-right: 3px;
+}
