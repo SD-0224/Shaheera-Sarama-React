@@ -9,11 +9,11 @@ export default function Fav() {
     <h2 className="capitalize">my favourites topics</h2>
     <div className={styles.favouritesContent} id="favContent">
       <div className={styles.favouritesContentBox}>
-        <img src="imgs/courses/react.webp" alt />
+        <img src={require(`./../../imgs/courses/html.png`)} alt />
         <div className={styles.favouritesText}>
           <h3 className="capitalize">react</h3>
           <div className="stars">
-           <Star/>
+           <Star courseRating={5}/>
           </div>
         </div>
       </div>

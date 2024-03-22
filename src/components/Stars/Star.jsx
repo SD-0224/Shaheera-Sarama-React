@@ -1,13 +1,10 @@
-import React from 'react'
-
-export default function Star({className}) {
+import React from "react";
+import getRating from './../../common/rating.js'
+export default function Star({ className, courseRating }) {
+  let res = getRating(courseRating);
   return (
     <div className={className}>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-  </div>
-  )
+      {res}
+    </div>
+  );
 }

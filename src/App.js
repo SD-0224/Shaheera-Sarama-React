@@ -6,7 +6,10 @@ import Footer from './components/Footer/Footer.jsx';
 import Shapes from './components/Shapes/Shapes.jsx';
 import { Route, Routes } from 'react-router-dom';
 import Details from './pages/Details/Details.jsx';
+// import Theme from './common/theme.js';
+import DefaultTheme from './common/Theme/DefaultTheme.js';
 
+DefaultTheme();
 function App() {
 
   return (
@@ -17,7 +20,7 @@ function App() {
       <Shapes/>
       <Routes>
       <Route path='/' element = {<Home/>}></Route>
-      <Route path='/details' element = {<Details/>}></Route>
+      <Route path='/details/:id' element = {<Details/>}></Route>
       </Routes>
       <Footer/>
     </div>
