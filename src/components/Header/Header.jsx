@@ -7,13 +7,18 @@ function Header() {
   return (
     <header>
       <LayoutContainer>
-      <nav className="flex">
+        <nav className="flex">
           <div className={style.logo}>
-            <Link to = '/' >web topics</Link>
+            <Link to="/">web topics</Link>
           </div>
 
           <div className={`${style.buttonsNav} flex`}>
-            <UiButton className="flex" label="dark mode" icon="moon-outline" onClick={()=>Toggle()}/>
+            <UiButton
+              className="flex"
+              label="dark mode"
+              icon="moon-outline"
+              onClick={() => Toggle()}
+            />
             <UiButton label="favourites" icon="heart-outline" />
           </div>
         </nav>

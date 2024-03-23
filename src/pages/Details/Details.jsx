@@ -29,7 +29,7 @@ export default function Details() {
   }
   return (
     <>
-      <CourseDetails courseDetails={courseDetails} id={id}/>
+      <CourseDetails courseDetails={courseDetails} id={id} />
       <div className={styles.container}>
         <CourseTable courseDetails={courseDetails} />
       </div>

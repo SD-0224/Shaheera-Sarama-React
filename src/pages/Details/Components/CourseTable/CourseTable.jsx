@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./CoursesTable.module.css";
 import CourseSub from "./CourseSub/CourseSub";
-export default function CourseTable({courseDetails}) {
+export default function CourseTable({ courseDetails }) {
   return (
     <section className={styles.courseContent}>
       <div>

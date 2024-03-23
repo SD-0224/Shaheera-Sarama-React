@@ -3,21 +3,19 @@ import { fetchData } from "../../common/fetch";
 import style from "./Courses.module.css";
 import { getRating } from "../../common/rating";
 import Card from "../Card/Card";
-import { CoursesContext } from "../../pages/Home/Home";
 function Courses() {
   let [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    async function getAllCourses(){
+    async function getAllCourses() {
       let allCourses = await fetchData("/list");
       setCourses(allCourses);
     }
     getAllCourses();
   }, []);
 
-
-  if(courses.length == 0){
-    return <img src={require(`../../imgs/giphy.gif`)} className="loadingImg"/>
+  if (courses.length == 0) {
+    return <img src={require(`../../imgs/giphy.gif`)} className="loadingImg" />;
   }
 
   return (

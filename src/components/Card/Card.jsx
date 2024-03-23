@@ -15,7 +15,7 @@ export default function Card({ topics }) {
               <h2>{topics.category}</h2>
               <h3>{topics.topic}</h3>
             </div>
-            <Star className={style.stars} courseRating = {topics.rating}/>
+            <Star className={style.stars} courseRating={topics.rating} />
             <p className="capitalize">author: {topics.name}</p>
           </div>
         </Link>
