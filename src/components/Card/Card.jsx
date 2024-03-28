@@ -4,7 +4,7 @@ import Star from "../Stars/Star";
 export default function Card({ topics }) {
   return (
     <>
-      <div className={style.courseBox} id={topics.id} key={topics.id}>
+      <div className={style.courseBox}>
         <Link to={`/details/${topics.id}`}>
           <img
             src={require(`./../../imgs/courses/${topics.image}`)}

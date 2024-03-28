@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --brand-primary: #0768AC;
     --brand-secondary: #03C180;
     --bg-default: #FFF;
@@ -14,9 +14,26 @@
     --lines-color: #DDD;
     --body-text: #333;
     --heart-color: #DC143C;
-    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
+/* }  */
+.light{
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+    --bg-default: #FFF;
+    --bg-body: #F0F9FF;
+    --lines-color: #DDD;
+    --body-text: #333;
+    --heart-color: #DC143C;
 }
-
+.dark{
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+    --bg-default:#1A1A1A;
+    --bg-body: #282828;
+    --lines-color: #000000;
+    --body-text: #EDEDED;
+    --heart-color:#DC143C;
+}
 body {
     font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;

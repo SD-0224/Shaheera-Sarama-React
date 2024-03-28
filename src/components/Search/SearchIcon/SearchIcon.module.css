@@ -1,0 +1,66 @@
+main {
+    background-color: var(--bg-body);
+    padding: 20px 0;
+}
+
+main .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px var(--lines-color);
+    border-radius: 5px;
+}
+
+main .search input {
+    width: 80%;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 8px 8px 8px 30px;
+    background-color: var(--bg-default);
+    border: none;
+    /* border: 1px solid var(--lines-color); */
+    border-radius: 5px 0 0 5px;
+    color: #929292;
+    height: 45px;
+    outline: none;
+}
+
+main .search ion-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    line-height: 45px;
+    color: var(--body-text);
+}
+@media(max-width:767px) {
+    main .search {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main .search input {
+        width: 100%;
+        font-family: 'Nunito Sans', sans-serif;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    main .search ion-icon {
+        top: 16px;
+    }
+}
+
+@media(min-width:768px) and (max-width:922px) {
+    main .search {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .search input {
+        width: 100%;
+        font-family: 'Nunito Sans', sans-serif;
+        border-radius: 5px 5px 0px 0px;
+    }
+    main .search ion-icon {
+        top: 15px;
+    }
+}
