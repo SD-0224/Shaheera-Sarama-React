@@ -1,5 +1,5 @@
 import style from "./Courses.module.css";
-import Card from "../Card/Card";
+import Card from "../../../components/Card/Card";
 function Courses({ courses }) {
   return (
     <>

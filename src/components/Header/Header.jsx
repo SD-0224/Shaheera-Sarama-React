@@ -2,10 +2,12 @@ import style from "./Header.module.css";
 import UiButton from "./../UiButtons/UiButtons";
 import LayoutContainer from "../LayoutContainer/LayoutContainer";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 // import Toggle from "../../common/Theme/Toggle";
-
-function Header({ togglefunction, theme }) {
-  let mode = theme === "dark" ? "light" : "dark";
+import { ThemeContext } from "../../App";
+function Header({ togglefunction }) {
+  const themeWord = useContext(ThemeContext);
+  let mode = themeWord === "dark" ? "light" : "dark";
   return (
     <header>
       <LayoutContainer>

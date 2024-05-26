@@ -1,3 +1,6 @@
+// import { useId } from "react";
+
+// let id = useId();
 export default function getRating(rating) {
   let integerPart = parseInt(rating);
   let decimalPart = rating - integerPart;

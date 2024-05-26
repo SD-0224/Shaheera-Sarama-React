@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Shapes from "./components/Shapes/Shapes.jsx";
 import { Route, Routes } from "react-router-dom";
 import Details from "./pages/Details/Details.jsx";
+export let ThemeContext = createContext();
 
 function App() {
   let [theme, setTheme] = useState(localStorage.getItem("theme"));
@@ -29,15 +30,17 @@ function App() {
     }
   }, []);
   return (
+    
     <div className={`App ${theme}`}>
-      {/* <button onClick={() => toggleTheme()}>test</button> */}
-      <Header theme={theme} togglefunction = {toggleTheme}/>
+    <ThemeContext.Provider value={theme}>
+      <Header togglefunction = {toggleTheme}/>
       <Shapes />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/details/:id" element={<Details />}></Route>
       </Routes>
       <Footer />
+    </ThemeContext.Provider>
     </div>
   );
 }
