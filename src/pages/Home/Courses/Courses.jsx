@@ -5,7 +5,7 @@ function Courses({ courses }) {
     <>
       <section className={style.courses}>
         <div className={style.coursestext}>
-          <p className="capitalize">"{courses.length}" web topic found</p>
+          <p className="capitalize">"{courses.length}" web topics found</p>
         </div>
         <div className={style.coursesContent}>
           {courses.map((course) => (

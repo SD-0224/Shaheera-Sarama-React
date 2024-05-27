@@ -1,0 +1,5 @@
+.noResults{
+    color: var(--heart-color);
+    margin: 20px;
+    font-weight: bold;
+}
