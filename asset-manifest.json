@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Shaheera-Sarama-React/static/css/main.44bf704a.css",
-    "main.js": "/Shaheera-Sarama-React/static/js/main.e26135a0.js",
+    "main.css": "/Shaheera-Sarama-React/static/css/main.6c6cb7f7.css",
+    "main.js": "/Shaheera-Sarama-React/static/js/main.acf081c5.js",
     "static/js/453.560be68f.chunk.js": "/Shaheera-Sarama-React/static/js/453.560be68f.chunk.js",
     "static/media/analytics.png": "/Shaheera-Sarama-React/static/media/analytics.7e81c6ec23532162f2ea.png",
     "static/media/angular.png": "/Shaheera-Sarama-React/static/media/angular.fe7fe0b7dad8f1ba6bbd.png",
@@ -41,12 +41,12 @@
     "static/media/expressjs.webp": "/Shaheera-Sarama-React/static/media/expressjs.2ae1dc58f7c5318ca228.webp",
     "static/media/react.webp": "/Shaheera-Sarama-React/static/media/react.55afe679a76823cdda39.webp",
     "index.html": "/Shaheera-Sarama-React/index.html",
-    "main.44bf704a.css.map": "/Shaheera-Sarama-React/static/css/main.44bf704a.css.map",
-    "main.e26135a0.js.map": "/Shaheera-Sarama-React/static/js/main.e26135a0.js.map",
+    "main.6c6cb7f7.css.map": "/Shaheera-Sarama-React/static/css/main.6c6cb7f7.css.map",
+    "main.acf081c5.js.map": "/Shaheera-Sarama-React/static/js/main.acf081c5.js.map",
     "453.560be68f.chunk.js.map": "/Shaheera-Sarama-React/static/js/453.560be68f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44bf704a.css",
-    "static/js/main.e26135a0.js"
+    "static/css/main.6c6cb7f7.css",
+    "static/js/main.acf081c5.js"
   ]
 }
