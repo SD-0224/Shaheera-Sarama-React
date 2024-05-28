@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./CourseBox.module.css";
-import { AddFav } from '../../../../common/Fav/AddFav';
+import { useFavouritesContext } from "../../../../Context/FavouritesContext/FavouritesContext";
 
 export default function CourseBox({ courseDetails, id }) {
+  let { addToFavs, courseState } = useFavouritesContext();
   return (
     <>
       <div className={styles.courseDetailBox}>
@@ -21,8 +22,18 @@ export default function CourseBox({ courseDetails, id }) {
             <p id="alredyFav">
               <span className="capitalize">i</span>ntreseted about this topic?
             </p>
-            <button className="capitalize" onClick={()=>AddFav(id)}>
-              add to favourite
+            <button
+              className="capitalize"
+              onClick={() => {
+                courseState(courseDetails)
+                  ? console.log("remove")
+                  : addToFavs(courseDetails);
+              }}
+            >
+              {courseState(courseDetails)
+                ? "remove from favourite"
+                : "add to favourite"}
+
               <ion-icon
                 name="heart-outline"
                 role="img"

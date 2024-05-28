@@ -3,11 +3,12 @@ import UiButton from "./../UiButtons/UiButtons";
 import LayoutContainer from "../LayoutContainer/LayoutContainer";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-// import Toggle from "../../common/Theme/Toggle";
 import { ThemeContext } from "../../App";
-function Header({ togglefunction }) {
-  const themeWord = useContext(ThemeContext);
-  let mode = themeWord === "dark" ? "light" : "dark";
+import { useFavouritesContext } from "../../Context/FavouritesContext/FavouritesContext";
+function Header() {
+  let { ToggleFav } = useFavouritesContext();
+  const {theme,toggleTheme} = useContext(ThemeContext);
+  let mode = theme === "dark" ? "light" : "dark";
   return (
     <header>
       <LayoutContainer>
@@ -21,9 +22,15 @@ function Header({ togglefunction }) {
               className="flex"
               label={mode + " mode"}
               icon="moon-outline"
-              onClick={togglefunction}
+              onClick={toggleTheme}
             />
-            <UiButton label="favourites" icon="heart-outline" />
+            <UiButton
+              label="favourites"
+              icon="heart-outline"
+              onClick={() => {
+                ToggleFav();
+              }}
+            />
           </div>
         </nav>
       </LayoutContainer>

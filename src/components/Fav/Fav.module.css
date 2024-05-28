@@ -21,7 +21,6 @@
     color: var(--body-text);
 }
 .favourites .favouritesContentBox{
-    /* width: 12%; */
     border: 1px solid var(--lines-color);
     box-shadow: 0 0 10px var(--lines-color);
     border-radius: 5px;

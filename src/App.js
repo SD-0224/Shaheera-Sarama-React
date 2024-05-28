@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer.jsx";
 import Shapes from "./components/Shapes/Shapes.jsx";
 import { Route, Routes } from "react-router-dom";
 import Details from "./pages/Details/Details.jsx";
+import FavouritesContext from "./Context/FavouritesContext/FavouritesContext.jsx";
+import Fav from "./components/Fav/Fav.jsx";
 export let ThemeContext = createContext();
 
 function App() {
@@ -30,19 +32,27 @@ function App() {
     }
   }, []);
   return (
-    
     <div className={`App ${theme}`}>
-    <ThemeContext.Provider value={theme}>
-      <Header togglefunction = {toggleTheme}/>
-      <Shapes />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/details/:id" element={<Details />}></Route>
-      </Routes>
-      <Footer />
-    </ThemeContext.Provider>
+      <ThemeContext.Provider value={{theme,toggleTheme}}>
+        <FavouritesContext>
+          <Header togglefunction={toggleTheme} />
+          <Shapes />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/details/:id" element={<Details />}></Route>
+          </Routes>
+          <Footer />
+          <Fav />
+        </FavouritesContext>
+      </ThemeContext.Provider>
     </div>
   );
 }
 
 export default App;
+
+/*
+Remove from favs 
+slide smothily 
+theme with context
+*/
