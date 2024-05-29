@@ -52,9 +52,6 @@ function App() {
 export default App;
 
 /*
-Remove from favs 
 slide smothily 
 theme with context
-checkign for files
-create useFetch Hook
 */

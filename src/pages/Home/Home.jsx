@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Search from "../../components/Search/Search";
-import Courses from "./Courses/Courses";
+import Search from "./components/Search/Search";
+import Courses from "./components/Courses/Courses";
 import { fetchData } from "../../common/fetch";
 import LayoutContainer from "../../components/LayoutContainer/LayoutContainer";
-import Select from "../../components/Select/Select";
-import SearchIcon from "../../components/Search/SearchIcon/SearchIcon";
+import Select from "./components/Select/Select";
+import SearchIcon from "./components/Search/SearchIcon/SearchIcon";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -16,18 +16,7 @@ export default function Home() {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const getAllCourses = async () => {
-      setLoading(true);
-      let allCourses = await fetchData("/list");
-      setCourses(allCourses);
-      let cats = new Set(allCourses.map((course) => course.category));
-      setCategories([...cats]);
-      setLoading(false);
-    };
-    getAllCourses();
-  }, []);
-
+  // Search Filters function to filter the searchResult
   const searchFilters = (sortSelected, filterSelected) => {
     let result = [...searchResult];
     if (sortSelected !== "") {
@@ -47,11 +36,23 @@ export default function Home() {
     }
     return result;
   };
-
+  
   const applySearch = async () => {
     let result = await fetchData(`/list?phrase=${search}`);
     setSearchResult(result);
   };
+  
+  useEffect(() => {
+    const getAllCourses = async () => {
+      setLoading(true);
+      let allCourses = await fetchData("/list");
+      setCourses(allCourses);
+      let cats = new Set(allCourses.map((course) => course.category));
+      setCategories([...cats]);
+      setLoading(false);
+    };
+    getAllCourses();
+  }, []);
 
   useEffect(() => {
     let debounceSearch = setTimeout(() => {

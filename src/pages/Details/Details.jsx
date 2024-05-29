@@ -4,7 +4,6 @@ import CourseTable from "./Components/CourseTable/CourseTable";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchData } from "../../common/fetch";
-import CourseBox from "./Components/CourseBox/CourseBox";
 
 export default function Details() {
   let { id } = useParams();

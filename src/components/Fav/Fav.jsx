@@ -10,7 +10,7 @@ export default function Fav() {
     <section
       className={`${styles.favourites} ${
         isFavOpen ? styles.favouritesOpen : styles.favouritesClose
-      }`}
+      } ${!isFavOpen ? styles.hideFavPannel : styles.showFavPannel}`}
     >
       <LayoutContainer>
         <h2 className="capitalize">my favourites topics</h2>

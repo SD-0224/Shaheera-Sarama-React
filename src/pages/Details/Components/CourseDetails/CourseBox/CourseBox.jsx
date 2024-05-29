@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CourseBox.module.css";
-import { useFavouritesContext } from "../../../../Context/FavouritesContext/FavouritesContext";
+import { useFavouritesContext } from "../../../../../Context/FavouritesContext/FavouritesContext";
 
 export default function CourseBox({ courseDetails, id }) {
   let { addToFavs, courseState, removeFromFavs, setIsFavOpen } =
@@ -9,7 +9,7 @@ export default function CourseBox({ courseDetails, id }) {
     <>
       <div className={styles.courseDetailBox}>
         <img
-          src={require(`../../../../imgs/courses/${courseDetails.image}`)}
+          src={require(`../../../../../imgs/courses/${courseDetails.image}`)}
           alt
         />
         <div className={styles.courseDetailBoxContent}>

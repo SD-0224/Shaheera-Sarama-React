@@ -25,6 +25,12 @@
   z-index: 2;
 }
 
+.hideFavPannel{
+  display: none;
+}
+.showFavPannel{
+  display: block;
+}
 .favouritesOpen {
   animation: slideUp 2s forwards;
 }

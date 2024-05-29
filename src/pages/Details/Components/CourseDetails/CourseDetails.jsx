@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./CourseDetails.module.css";
 import Stars from "./../../../../components/Stars/Star";
-import CourseBox from "../CourseBox/CourseBox";
+import CourseBox from "./CourseBox/CourseBox";
 
 export default function CourseDetails({ courseDetails, id }) {
   return (

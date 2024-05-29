@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import style from "./Card.module.css";
-import Star from "../Stars/Star";
+import Star from "../../../../components/Stars/Star";
 export default function Card({ topics }) {
   return (
     <>
       <div className={style.courseBox}>
         <Link to={`/details/${topics.id}`}>
           <img
-            src={require(`./../../imgs/courses/${topics.image}`)}
+            src={require(`../../../../imgs/courses/${topics.image}`)}
             alt={topics.title}
           />
           <div className={style.courseBoxText}>
