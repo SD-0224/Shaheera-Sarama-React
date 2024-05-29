@@ -3,7 +3,8 @@ import styles from "./CourseBox.module.css";
 import { useFavouritesContext } from "../../../../Context/FavouritesContext/FavouritesContext";
 
 export default function CourseBox({ courseDetails, id }) {
-  let { addToFavs, courseState } = useFavouritesContext();
+  let { addToFavs, courseState, removeFromFavs, setIsFavOpen } =
+    useFavouritesContext();
   return (
     <>
       <div className={styles.courseDetailBox}>
@@ -26,8 +27,9 @@ export default function CourseBox({ courseDetails, id }) {
               className="capitalize"
               onClick={() => {
                 courseState(courseDetails)
-                  ? console.log("remove")
+                  ? removeFromFavs(courseDetails)
                   : addToFavs(courseDetails);
+                setIsFavOpen(true);
               }}
             >
               {courseState(courseDetails)

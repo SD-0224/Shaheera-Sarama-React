@@ -1,51 +1,85 @@
-.favourites{
-    background-color: var(--bg-default);
-    box-shadow: 0 0 10px var(--lines-color);
-    padding: 5px 0;
-    position: sticky;
-    bottom: 0;
-    z-index: 2;
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-.favourites h2{
-    font-size: 13px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    color: var(--body-text);
-    text-align: left;
-    padding: 10px 0;
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
 }
-.favourites .favouritesContent{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(80px,150px));
-    gap: 10px;
-    color: var(--body-text);
+
+.favourites {
+  background-color: var(--bg-default);
+  box-shadow: 0 0 10px var(--lines-color);
+  padding: 5px 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
 }
-.favourites .favouritesContentBox{
-    border: 1px solid var(--lines-color);
-    box-shadow: 0 0 10px var(--lines-color);
-    border-radius: 5px;
-    height: 110px;
+
+.favouritesOpen {
+  animation: slideUp 2s forwards;
 }
-.favourites img{
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    height: 60px;
+
+.favouritesClose {
+  animation: slideDown 2s forwards;
 }
-.favouritesText{
-    padding-left: 5px;
-    text-align: left;
+
+.favourites h2 {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: var(--body-text);
+  text-align: left;
+  padding: 10px 0;
 }
-.favouritesText h3{
-    font-size: 13px;
-    color: var(--body-text);
+
+.favourites .favouritesContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 150px));
+  gap: 10px;
+  color: var(--body-text);
 }
-.favouritesText .stars{
-    width: 100%;
-    padding-bottom: 5px;
+
+.favourites .favouritesContentBox {
+  border: 1px solid var(--lines-color);
+  box-shadow: 0 0 10px var(--lines-color);
+  border-radius: 5px;
+  height: 110px;
 }
-.favouritesText ion-icon{
-    color: #E29916;
-    font-size: 12px;
-    margin-right: 0px;
-    font-weight: bold;
+
+.favourites img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  height: 60px;
+}
+
+.favouritesText {
+  padding-left: 5px;
+  text-align: left;
+}
+
+.favouritesText h3 {
+  font-size: 13px;
+  color: var(--body-text);
+}
+
+.favouritesText .stars {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.favouritesText ion-icon {
+  color: #e29916;
+  font-size: 12px;
+  margin-right: 0px;
+  font-weight: bold;
 }

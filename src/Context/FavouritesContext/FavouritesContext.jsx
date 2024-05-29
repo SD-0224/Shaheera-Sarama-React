@@ -25,6 +25,11 @@ export default function FavouritesContext({ children }) {
     }
   };
 
+  //Remove from Favourotes 
+  let removeFromFavs = (courseDetails) =>{
+    setFavItems(favItems.filter((fav)=> fav.id !== courseDetails.id ));
+  }
+
   // Check for coures status
   let courseState = (courseDetails) => {
     let duplicatedCourse = favItems.find((fav) => {
@@ -37,11 +42,13 @@ export default function FavouritesContext({ children }) {
     <favouritesContext.Provider
       value={{
         isFavOpen,
+        setIsFavOpen,
         ToggleFav,
         favItems,
         setFavItems,
         addToFavs,
         courseState,
+        removeFromFavs
       }}
     >
       {children}
