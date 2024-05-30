@@ -1,8 +1,21 @@
-# Getting Started with Create React App
+# Courses Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Courses Website** is a React application that allows users to browse various online courses, search for them, view details, and add or remove them from their favorites. The application also features both dark and light themes.
 
-## Available Scripts
+## Table of Contents
+- [Demo](#demo)
+- Getting Started
+- Usage
+- Components
+- Routing
+- Data Management
+- Styling
+
+## Demo
+
+Check out the online demo of the website: [Courses Website Demo](https://sd-0224.github.io/Shaheera-Sarama-React/)
+
+## Getting Started
 
 In the project directory, you can run:
 
