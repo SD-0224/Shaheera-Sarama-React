@@ -4,80 +4,92 @@
 
 ## Table of Contents
 - [Demo](#demo)
-- Getting Started
-- Usage
-- Components
-- Routing
-- Data Management
-- Styling
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Components](#components)
+- [Routing](#routing)
+- [Data Management](#data-management)
+- [Styling](#styling)
 
 ## Demo
 
-Check out the online demo of the website: [Courses Website Demo](https://sd-0224.github.io/Shaheera-Sarama-React/)
+Check out the online demo of the website: [Courses Website Demo](https://sd-0224.github.io/Shaheera-Sarama-React/).
 
 ## Getting Started
 
-In the project directory, you can run:
+To get started with the Courses Website, follow these steps:
 
-### `npm start`
+1. Clone the repository on your desktop:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```bash
+    git clone https://github.com/SD-0224/Shaheera-Sarama-React
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+    ```bash
+    cd firstProject
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install dependencies:
 
-### `npm run build`
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+Once the development server is running, you can access the Courses Website in your browser at `http://localhost:3000`. From there, you can browse courses, view course details, search for courses and add your favorite ones. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Courses Website consists of several components that are used throughout the application. Here are some of the main components:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Shared and reusable components throughout the application:**
+  - **Header component:** Contains the navigation.
+  - **Shapes component:** Contains the shapes used in the website.
+  - **Layout container:** Contains the HTML elements.
+  - **Stars component:** Responsible for returning the UI rating for courses.
+  - **Footer:** Contains the footer content.
+  - **Fav components:** Contains the favorite courses section, which is shared throughout the whole application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Pages components which contain the pages in the website:**
+  - **Home page component:** Contains the home page content, which includes:
+    - **Search component:** Responsible for the search feature.
+    - **Select component:** Responsible for the select element.
+    - **Course:** Displays a list of available courses.
+    - **Card:** Represents a single course card with course details.
+  - **Details component:** Contains the details page content.
+    - **CourseDetails:** Shows detailed information about a specific course.
+   
+## Routing
 
-## Learn More
+The application uses React Router for client-side routing. Here are the main routes:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `/`: Home page displaying a list of courses.
+- `/details/:id`: Detailed view of a specific course.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Data Management
 
-### Code Splitting
+The Courses Website manages course data using React State, Context API, and makes API calls to retrieve course information from a backend server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Styling
 
-### Analyzing the Bundle Size
+Styling is achieved using CSS modules and styled-components to create a cohesive and visually appealing user interface.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Additional Resources
+*Api Links:*
+- https://tap-web-1.herokuapp.com/topics/list
+- https://tap-web-1.herokuapp.com/topics/details/1
+- https://tap-web-1.herokuapp.com/topics/list?phrase=
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any inquiries or feedback, feel free to reach out via email at shaheerasarama@gmail.com.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
