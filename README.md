@@ -84,10 +84,14 @@ The Courses Website manages course data using React State, Context API, and make
 Styling is achieved using CSS modules and styled-components to create a cohesive and visually appealing user interface.
 
 ## Additional Resources
-*Api Links:*
-- https://tap-web-1.herokuapp.com/topics/list
-- https://tap-web-1.herokuapp.com/topics/details/1
-- https://tap-web-1.herokuapp.com/topics/list?phrase=
+
+**API Links:**
+
+- [List of Topics](https://tap-web-1.herokuapp.com/topics/list)
+- [Details of a Topic](https://tap-web-1.herokuapp.com/topics/details/1)
+- [Search Topics](https://tap-web-1.herokuapp.com/topics/list?phrase=)
+
+These links provide access to various endpoints of the backend server, allowing retrieval of course information and topics.
 
 ## Contact
 
