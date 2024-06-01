@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Courses Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Courses Website** is a React application that allows users to browse various online courses, search for them, view details, and add or remove them from their favorites. The application also features both dark and light themes.
 
-## Available Scripts
+## Table of Contents
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Components](#components)
+- [Routing](#routing)
+- [Data Management](#data-management)
+- [Styling](#styling)
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+Check out the online demo of the website: [Courses Website Demo](https://sd-0224.github.io/Shaheera-Sarama-React/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with the Courses Website, follow these steps:
 
-### `npm test`
+1. Clone the repository on your desktop:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/SD-0224/Shaheera-Sarama-React
+    ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd firstProject
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Once the development server is running, you can access the Courses Website in your browser at `http://localhost:3000`. From there, you can browse courses, view course details, search for courses and add your favorite ones. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Components
 
-## Learn More
+The Courses Website consists of several components that are used throughout the application. Here are some of the main components:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Shared and reusable components throughout the application:**
+  - **Header component:** Contains the navigation.
+  - **Shapes component:** Contains the shapes used in the website.
+  - **Layout container:** Contains the HTML elements.
+  - **Stars component:** Responsible for returning the UI rating for courses.
+  - **Footer:** Contains the footer content.
+  - **Fav components:** Contains the favorite courses section, which is shared throughout the whole application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Pages components which contain the pages in the website:**
+  - **Home page component:** Contains the home page content, which includes:
+    - **Search component:** Responsible for the search feature.
+    - **Select component:** Responsible for the select element.
+    - **Course:** Displays a list of available courses.
+    - **Card:** Represents a single course card with course details.
+  - **Details component:** Contains the details page content.
+    - **CourseDetails:** Shows detailed information about a specific course.
+   
+## Routing
 
-### Code Splitting
+The application uses React Router for client-side routing. Here are the main routes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `/`: Home page displaying a list of courses.
+- `/details/:id`: Detailed view of a specific course.
 
-### Analyzing the Bundle Size
+## Data Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The Courses Website manages course data using React State, Context API, and makes API calls to retrieve course information from a backend server.
 
-### Making a Progressive Web App
+## Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Styling is achieved using CSS modules and styled-components to create a cohesive and visually appealing user interface.
 
-### Advanced Configuration
+## Additional Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**API Links:**
 
-### Deployment
+- [List of Topics](https://tap-web-1.herokuapp.com/topics/list)
+- [Details of a Topic](https://tap-web-1.herokuapp.com/topics/details/1)
+- [Search Topics](https://tap-web-1.herokuapp.com/topics/list?phrase=)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+These links provide access to various endpoints of the backend server, allowing retrieval of course information and topics.
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any inquiries or feedback, feel free to reach out via email at shaheerasarama@gmail.com.
+
