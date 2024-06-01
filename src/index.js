@@ -5,12 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { StrictMode } from "react";
+import ThemeContext from "./Context/ThemeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter basename="Shaheera-Sarama-React">
     <StrictMode>
-      <App />
+      <ThemeContext>
+        <App />
+      </ThemeContext>
     </StrictMode>
   </BrowserRouter>
 );

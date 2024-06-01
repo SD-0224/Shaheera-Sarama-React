@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
 //Creating component for store a localstorage value
 export default function useStorageState(key, defaultValue) {

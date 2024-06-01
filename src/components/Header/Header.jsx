@@ -2,12 +2,11 @@ import style from "./Header.module.css";
 import UiButton from "./../UiButtons/UiButtons";
 import LayoutContainer from "../LayoutContainer/LayoutContainer";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { ThemeContext } from "../../App";
 import { useFavouritesContext } from "../../Context/FavouritesContext/FavouritesContext";
+import { useThemeContext } from "../../Context/ThemeContext";
 function Header() {
   let { ToggleFav } = useFavouritesContext();
-  const {theme,toggleTheme} = useContext(ThemeContext);
+  const { theme, toggleTheme } = useThemeContext();
   let mode = theme === "dark" ? "light" : "dark";
   return (
     <header>

@@ -11,8 +11,8 @@ export default function Details() {
 
   useEffect(() => {
     async function getCourse() {
-      courseDetails = await fetchData(`/details/${id}`);
-      setcourseDatails(courseDetails);
+      let singleCourseDetails = await fetchData(`/details/${id}`);
+      setcourseDatails(singleCourseDetails);
     }
     getCourse();
   }, [id]);

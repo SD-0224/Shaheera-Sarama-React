@@ -1,4 +1,3 @@
-import { createContext, useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -8,43 +7,22 @@ import { Route, Routes } from "react-router-dom";
 import Details from "./pages/Details/Details.jsx";
 import FavouritesContext from "./Context/FavouritesContext/FavouritesContext.jsx";
 import Fav from "./components/Fav/Fav.jsx";
-export let ThemeContext = createContext();
-
+import { useThemeContext } from "./Context/ThemeContext.jsx";
 function App() {
-  let [theme, setTheme] = useState(localStorage.getItem("theme"));
-  function toggleTheme() {
-    let chosenTheme = theme === "light" ? "dark" : "light";
-    localStorage.setItem("theme", chosenTheme);
-    setTheme(chosenTheme);
-  }
-  useEffect(() => {
-    if (theme === null) {
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      ) {
-        localStorage.setItem("theme", "dark");
-        setTheme("dark");
-      } else {
-        localStorage.setItem("theme", "light");
-        setTheme("light");
-      }
-    }
-  }, []);
+  const { theme } = useThemeContext();
+
   return (
     <div className={`App ${theme}`}>
-      <ThemeContext.Provider value={{theme,toggleTheme}}>
-        <FavouritesContext>
-          <Header togglefunction={toggleTheme} />
-          <Shapes />
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/details/:id" element={<Details />}></Route>
-          </Routes>
-          <Footer />
-          <Fav />
-        </FavouritesContext>
-      </ThemeContext.Provider>
+      <FavouritesContext>
+        <Header />
+        <Shapes />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/details/:id" element={<Details />}></Route>
+        </Routes>
+        <Footer />
+        <Fav />
+      </FavouritesContext>
     </div>
   );
 }

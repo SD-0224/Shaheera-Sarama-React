@@ -5,7 +5,7 @@ import Star from "../Stars/Star";
 import { useFavouritesContext } from "../../Context/FavouritesContext/FavouritesContext";
 
 export default function Fav() {
-  let { isFavOpen, setIsFavOpen, favItems } = useFavouritesContext();
+  let { isFavOpen, favItems } = useFavouritesContext();
   return (
     <section
       className={`${styles.favourites} ${

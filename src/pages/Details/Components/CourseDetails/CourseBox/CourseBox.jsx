@@ -10,12 +10,12 @@ export default function CourseBox({ courseDetails, id }) {
       <div className={styles.courseDetailBox}>
         <img
           src={require(`../../../../../imgs/courses/${courseDetails.image}`)}
-          alt
+          alt="course Image"
         />
         <div className={styles.courseDetailBoxContent}>
           <p className={styles.author}>
             <span>{courseDetails.topic}</span> by{" "}
-            <a href className="capitalize">
+            <a href="#" className="capitalize">
               {courseDetails.name}
             </a>
           </p>
