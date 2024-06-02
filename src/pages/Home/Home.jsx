@@ -27,6 +27,9 @@ export default function Home() {
         case "Topic Name":
           result = result.sort((a, b) => a.topic.localeCompare(b.topic));
           break;
+        case "Most Rating":
+          result = result.sort((a, b) => b.rating - a.rating);
+          break;
         default:
           break;
       }
@@ -36,12 +39,12 @@ export default function Home() {
     }
     return result;
   };
-  
+
   const applySearch = async () => {
     let result = await fetchData(`/list?phrase=${search}`);
     setSearchResult(result);
   };
-  
+
   useEffect(() => {
     const getAllCourses = async () => {
       setLoading(true);
@@ -89,7 +92,7 @@ export default function Home() {
               />
               <Select
                 label="sort by"
-                options={["Topic Name", "Author Name"]}
+                options={["Topic Name", "Author Name", "Most Rating"]}
                 className="sort"
                 onChange={(e) => setSort(e.target.value)}
               />
