@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shaheera-Sarama-React/static/css/main.fc642119.css",
-    "main.js": "/Shaheera-Sarama-React/static/js/main.ab7a57a8.js",
+    "main.js": "/Shaheera-Sarama-React/static/js/main.d6204ab8.js",
     "static/js/453.560be68f.chunk.js": "/Shaheera-Sarama-React/static/js/453.560be68f.chunk.js",
     "static/media/analytics.png": "/Shaheera-Sarama-React/static/media/analytics.7e81c6ec23532162f2ea.png",
     "static/media/angular.png": "/Shaheera-Sarama-React/static/media/angular.fe7fe0b7dad8f1ba6bbd.png",
@@ -42,11 +42,11 @@
     "static/media/react.webp": "/Shaheera-Sarama-React/static/media/react.55afe679a76823cdda39.webp",
     "index.html": "/Shaheera-Sarama-React/index.html",
     "main.fc642119.css.map": "/Shaheera-Sarama-React/static/css/main.fc642119.css.map",
-    "main.ab7a57a8.js.map": "/Shaheera-Sarama-React/static/js/main.ab7a57a8.js.map",
+    "main.d6204ab8.js.map": "/Shaheera-Sarama-React/static/js/main.d6204ab8.js.map",
     "453.560be68f.chunk.js.map": "/Shaheera-Sarama-React/static/js/453.560be68f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc642119.css",
-    "static/js/main.ab7a57a8.js"
+    "static/js/main.d6204ab8.js"
   ]
 }
